@@ -1,5 +1,10 @@
 # CG
 
+Task 1 - алгоритм Брезенхема для построения прямой
+Task 2 - поворот прямой
+Task 3 - кратчайший путь
+Task 4 - алгоритм Брезенхема для построения окружности
+
 Bresenham's algorithm - a fundamental method in Computer Graphics - is a clever way of approximating a continuous straight line with discrete pixels, ensuring that the line appears straight and smooth on a pixel-based display.
 
 'Aлгоритмические основы компьютерной графики' Hью Pоджерс\
