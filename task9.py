@@ -88,3 +88,54 @@ while running:
     pygame.time.delay(10)
 
 pygame.quit()
+--------------------------------------------
+
+import pygame
+from pygame.locals import *
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Инициализация Pygame
+pygame.init()
+
+# Размеры экрана
+width, height = 800, 600
+screen = pygame.display.set_mode((width, height))
+pygame.display.set_caption('Rogers Algorithm')
+
+# Параметры наблюдателя
+viewer_position = (200, 200, -500)
+
+# Функция для проецирования вершин трехмерного объекта на двумерный экран
+def project_vertices(vertices):
+    projected_vertices = []
+    for vertex in vertices:
+        x = vertex[0] + viewer_position[0]
+        y = vertex[1] + viewer_position[1]
+        z = vertex[2] + viewer_position[2]
+        projected_vertices.append((x / z * 100 + width / 2, y / z * 100 + height / 2))
+    return projected_vertices
+
+# Функция для отрисовки трехмерного объекта с использованием алгоритма Роджерса
+def draw_object(vertices):
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+
+    # Разбиение вершин объекта на отдельные списки координат
+    x = [v[0] for v in vertices]
+    y = [v[1] for v in vertices]
+    z = [v[2] for v in vertices]
+
+    # Отрисовка объекта
+    ax.plot_trisurf(x, y, z)
+
+    # Настройка осей
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+
+    plt.show()
+
+# Отрисовка трехмерного объекта
+vertices = [(0, 0, 0), (1, 0, 0), (0, 1, 0), (0, 0, 1)]
+draw_object(vertices)
