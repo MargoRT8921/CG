@@ -3,7 +3,7 @@
 Task 1 - алгоритм Брезенхема для построения прямой \
 Task 2 - поворот прямой \
 Task 3 - алгоритм Брезенхема для построения окружности \
-Task 4 - кратчайший путь
+Task 4 - кратчайший путь \
 Task 5 - фильтр Собеля
 
 Bresenham's algorithm - a fundamental method in Computer Graphics - is a clever way of approximating a continuous straight line with discrete pixels, ensuring that the line appears straight and smooth on a pixel-based display.
