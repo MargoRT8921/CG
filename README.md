@@ -8,7 +8,8 @@ Task 5 - фильтр Собеля\
 Task 6 - фильтр Гаусса\
 Task 7 - алгоритм Цируса-Бека\
 Task 8 - Алгоритм отсечения невидимых граней с использованием Z-буфера\
-Task 9 - Алгоритм Роджерса
+Task 9 - Алгоритм Роджерса\
+Task 10 - transform 3d
 
 Bresenham's algorithm - a fundamental method in Computer Graphics - is a clever way of approximating a continuous straight line with discrete pixels, ensuring that the line appears straight and smooth on a pixel-based display.
 
