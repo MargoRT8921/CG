@@ -11,7 +11,8 @@ Task 8 - Алгоритм отсечения невидимых граней с 
 Task 9 - Алгоритм Роджерса\
 Task 10 - transform 3d\
 Task 11 - transform 2d\
-Task 12 - заполнение
+Task 12 - заполнение\
+Task 13 - освещенность
 
 Bresenham's algorithm - a fundamental method in Computer Graphics - is a clever way of approximating a continuous straight line with discrete pixels, ensuring that the line appears straight and smooth on a pixel-based display.
 
